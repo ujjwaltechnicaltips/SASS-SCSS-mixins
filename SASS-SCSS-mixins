@@ -1,0 +1,27 @@
+@mixin border-radius($radius)
+{
+
+-moz-border-radius:$radius;
+-webkit-border-radius:$radius;
+-ms-border-radius:$radius;
+border-radius:$radius;
+}
+.success
+{
+@extend.message:
+@include border-radius(25px);
+border-color:green;
+}
+
+.error
+{
+@extend.message:
+@include border-radius(5px);
+border-color:green;
+}
+.warning
+{
+@extend.message:
+@include border-radius(15px);
+border-color:green;
+}
